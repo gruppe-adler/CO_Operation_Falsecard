@@ -1,0 +1,127 @@
+class Sentences
+{
+	//Define classname for each sentence of each actor. 
+	class 01_understood
+	{
+		text = "";
+		//Text which will be shown during the speaked sentence
+		speech[] = {"\sounds\pilot1\01_understood.ogg", db+10};
+		//path to the speech sound in your mission folder
+		actor = "pilot1";
+		//Actor, who is speaking and will have his lips moving
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+	
+	class 02_coburn
+	{
+		text = "";
+		//Text which will be shown during the speaked sentence
+		speech[] = {"\sounds\pilot1\02_coburn.ogg"};
+		//path to the speech sound in your mission folder
+		actor = "pilot1";
+		//Actor, who is speaking and will have his lips moving
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+	
+	class 03_copy
+	{
+		text = "";
+		//Text which will be shown during the speaked sentence
+		speech[] = {"\sounds\pilot1\03_copy.ogg"};
+		//path to the speech sound in your mission folder
+		actor = "pilot1";
+		//Actor, who is speaking and will have his lips moving
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+	
+	class 04_rdy
+	{
+		text = "";
+		//Text which will be shown during the speaked sentence
+		speech[] = {"\sounds\pilot1\04_rdy.ogg"};
+		//path to the speech sound in your mission folder
+		actor = "pilot1";
+		//Actor, who is speaking and will have his lips moving
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+	
+	class 05_takeoff
+	{
+		text = "";
+		//Text which will be shown during the speaked sentence
+		speech[] = {"\sounds\pilot1\05_takeoff.ogg"};
+		//path to the speech sound in your mission folder
+		actor = "pilot1";
+		//Actor, who is speaking and will have his lips moving
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+	
+	class 06_getrdy
+	{
+		text = "";
+		//Text which will be shown during the speaked sentence
+		speech[] = {"\sounds\pilot1\06_getrdy.ogg"};
+		//path to the speech sound in your mission folder
+		actor = "pilot1";
+		//Actor, who is speaking and will have his lips moving
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+	
+	class 07_20s
+	{
+		text = "";
+		//Text which will be shown during the speaked sentence
+		speech[] = {"\sounds\pilot1\07_20s.ogg"};
+		//path to the speech sound in your mission folder
+		actor = "pilot1";
+		//Actor, who is speaking and will have his lips moving
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+	
+	class 08_10s
+	{
+		text = "";
+		//Text which will be shown during the speaked sentence
+		speech[] = {"\sounds\pilot1\08_10s.ogg"};
+		//path to the speech sound in your mission folder
+		actor = "pilot1";
+		//Actor, who is speaking and will have his lips moving
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+	
+	class 09_54321
+	{
+		text = "";
+		//Text which will be shown during the speaked sentence
+		speech[] = {"\sounds\pilot1\09_54321.ogg"};
+		//path to the speech sound in your mission folder
+		actor = "pilot1";
+		//Actor, who is speaking and will have his lips moving
+		variant = "";
+		variantText = "";
+		class Arguments {};
+	};
+
+};
+
+class Arguments{};
+class Special{};
+
+startWithVocal[] = {hour};
+startWithConsonant[] = {europe, university};

@@ -1,0 +1,216 @@
+#include "plank\plank.h"
+
+/////////////////////HEADER
+
+class Header
+{
+  gameType = Coop;
+  minPlayers = 1;
+  maxPlayers = 29;
+};
+
+
+/////////////////////LOAD SCREEN
+
+onLoadName = "Operation Falsecard";
+onLoadMission = "";
+author = "Fridelcastro & McDiod für Gruppe Adler";
+loadScreen = "logo.paa";
+
+
+/////////////////////MISC
+
+enableDebugConsole = 1;
+disabledAI = 1;
+respawn = 3;
+
+
+/////////////////////CFG
+
+class CfgRemoteExec
+{        
+       // List of script functions allowed to be sent from client via remoteExec
+       class Functions
+       {
+               // State of remoteExec: 0-turned off, 1-turned on, taking whitelist into account, 2-turned on, however, ignoring whitelists (default because of backward compatibility)
+               mode = 2;
+               // Ability to send jip messages: 0-disabled, 1-enabled (default)
+               jip = 1;
+
+       };        
+       // List of script commands allowed to be sent from client via remoteExec
+       class Commands
+       {
+              /*your commands here*/
+              class execVM { allowedTargets=0;} // can target anyone, sending jip is turned off (overrides settings in the Commands class)
+	};
+};
+
+
+class CfgIdentities
+{
+	class Morgan
+	{
+		name="Philip Morgan";
+        nameSound = "Givens"; // Arma 3 only!
+		face="whiteHead_06";
+		glasses="None";
+		speaker="Male05ENG";
+		pitch=1.1;
+	};
+};
+
+
+class CfgNotifications
+{
+	class Hinweis
+	{
+		title = "Hinweis"; // Tile displayed as text on black background. Filled by arguments.
+		iconText = "!";
+		description = "%1";
+		color[] = {1,1,1,1}; // Icon and text color
+		duration = 10; // How many seconds will the notification be displayed
+	};
+};
+
+class CfgSounds
+{
+	sounds[] = {};
+
+	class engine_breakdown
+	{
+		name = "sound from addon";
+		// start path to sound file in AddOn with @
+		sound[] = {"sounds\engine_breakdown.ogg", db+12, 1};
+		titles[] = {0,""};
+	};
+
+	class engine_breakdown_loud
+	{
+		name = "sound from addon";
+		// start path to sound file in AddOn with @
+		sound[] = {"sounds\engine_breakdown.ogg", db+30, 1};
+		titles[] = {0,""};
+	};
+
+	class engine1
+	{
+		name = "sound from addon";
+		// start path to sound file in AddOn with @
+		sound[] = {"sounds\engine1.ogg", db-10, 1};
+		titles[] = {0,""};
+	};
+
+	class radar1
+	{
+		name = "sound from addon";
+		// start path to sound file in AddOn with @
+		sound[] = {"sounds\radar1.ogg", db-7, 1};
+		titles[] = {0,""};
+	};
+	
+	class radar2
+	{
+		name = "sound from addon";
+		// start path to sound file in AddOn with @
+		sound[] = {"sounds\radar2.ogg", db-7, 1};
+		titles[] = {0,""};
+	};
+	
+	class ambhum1
+	{
+		name = "sound from addon";
+		// start path to sound file in AddOn with @
+		sound[] = {"sounds\ambhum1.ogg", db+0, 1};
+		titles[] = {0,""};
+	};
+	
+	class siren_close
+	{
+		name = "sound from addon";
+		// start path to sound file in AddOn with @
+		sound[] = {"sounds\siren_close.ogg", db+9, 1};
+		titles[] = {0,""};
+	};
+	
+	class siren_far
+	{
+		name = "sound from addon";
+		// start path to sound file in AddOn with @
+		sound[] = {"sounds\siren_far.ogg", db+13, 1};
+		titles[] = {0,""};
+	};
+	
+	class 03_copy
+	{
+		name = "sound from addon";
+		// start path to sound file in AddOn with @
+		sound[] = {"sounds\pilot1\03_copy.ogg", db+5, 1};
+		titles[] = {0,""};
+	};
+
+	class 04_rdy
+	{
+		name = "sound from addon";
+		// start path to sound file in AddOn with @
+		sound[] = {"sounds\pilot1\04_rdy.ogg", db+5, 1};
+		titles[] = {0,""};
+	};
+
+	class 05_takeoff
+	{
+		name = "sound from addon";
+		// start path to sound file in AddOn with @
+		sound[] = {"sounds\pilot1\05_takeoff.ogg", db+5, 1};
+		titles[] = {0,""};
+	};
+
+	class 06_getrdy
+	{
+		name = "sound from addon";
+		// start path to sound file in AddOn with @
+		sound[] = {"sounds\pilot1\06_getrdy.ogg", db+5, 1};
+		titles[] = {0,""};
+	};
+
+	class 07_20s
+	{
+		name = "sound from addon";
+		// start path to sound file in AddOn with @
+		sound[] = {"sounds\pilot1\07_20s.ogg", db+5, 1};
+		titles[] = {0,""};
+	};
+
+	class 08_10s
+	{
+		name = "sound from addon";
+		// start path to sound file in AddOn with @
+		sound[] = {"sounds\pilot1\08_10s.ogg", db+5, 1};
+		titles[] = {0,""};
+	};
+
+	class 09_54321
+	{
+		name = "sound from addon";
+		// start path to sound file in AddOn with @
+		sound[] = {"sounds\pilot1\09_54321.ogg", db+5, 1};
+		titles[] = {0,""};
+	};
+
+	class fortunateson
+	{
+		name = "sound from addon";
+		// start path to sound file in AddOn with @
+		sound[] = {"sounds\fortunateson.ogg", db+1, 1};
+		titles[] = {0,""};
+	};
+
+	class fortunateson_low
+	{
+		name = "sound from addon";
+		// start path to sound file in AddOn with @
+		sound[] = {"sounds\fortunateson.ogg", db-9, 1};
+		titles[] = {0,""};
+	};
+};
+
